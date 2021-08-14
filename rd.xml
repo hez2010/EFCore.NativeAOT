@@ -1,0 +1,109 @@
+<Directives>
+    <Application>
+        <Assembly Name="EFCore.NativeAOT">
+            <Type Name="EFCore.NativeAOT.Controllers.WeatherForecastController" Dynamic="Required All" />
+        </Assembly>
+
+        <Assembly Name="Microsoft.EntityFrameworkCore.Relational">
+            <Type Name="Microsoft.EntityFrameworkCore.Update.Internal.KeyValueIndexFactorySource" Dynamic="Required All">
+                <Method Name="CreateFactory" Dynamic="Required">
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                </Method>
+            </Type>
+        </Assembly>
+
+        <Assembly Name="Microsoft.EntityFrameworkCore">
+            <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.EntryCurrentValueComparer`1[[System.Int32,System.Private.CoreLib]]" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer+DefaultValueComparer`1[[System.Int32,System.Private.CoreLib]]" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.Metadata.Internal.ClrAccessorFactory`1[[Microsoft.EntityFrameworkCore.Metadata.Internal.ClrPropertyGetter`2[[EFCore.NativeAOT.Table1,EFCore.NativeAOT],[System.Int32,System.Private.CoreLib]],Microsoft.EntityFrameworkCore]]" Dynamic="Required All">
+                <Method Name="CreateGeneric" Dynamic="Required All">
+                    <GenericArgument Name="EFCore.NativeAOT.Table1,EFCore.NativeAOT" />
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                </Method>
+            </Type>
+            <Type Name="Microsoft.EntityFrameworkCore.Metadata.Internal.ClrPropertyGetterFactory" Dynamic="Required All">
+                <Method Name="CreateGeneric" Dynamic="Required All">
+                    <GenericArgument Name="EFCore.NativeAOT.Table1,EFCore.NativeAOT" />
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                </Method>
+            </Type>
+            <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.Internal.Snapshot`1[[System.Int32,System.Private.CoreLib]]" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.Internal.Snapshot`2[[System.Int32,System.Private.CoreLib],[System.String,System.Private.CoreLib]]" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMapFactoryFactory" Dynamic="Required All">
+                <Method Name="CreateFactory" Dynamic="Required All">
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                </Method>
+            </Type>
+            <Type Name="Microsoft.EntityFrameworkCore.Metadata.Internal.PropertyAccessorsFactory" Dynamic="Required All">
+                <Method Name="CreateGeneric" Dynamic="Required All">
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                </Method>
+            </Type>
+            <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry" Dynamic="Required All">
+                <Method Name="ReadStoreGeneratedValue" Dynamic="Required All">
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                </Method>
+                <Method Name="ReadTemporaryValue" Dynamic="Required All">
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                </Method>
+                <Method Name="ReadOriginalValue" Dynamic="Required All">
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                </Method>
+                <Method Name="ReadRelationshipSnapshotValue" Dynamic="Required All">
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                </Method>
+            </Type>
+            <Type Name="Microsoft.EntityFrameworkCore.Diagnostics.Internal.DiagnosticsLogger`1[[System.Object,System.Private.CoreLib]]" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger" Dynamic="Required All">
+                <Method Name="NeedsEventData" Dynamic="Required">
+                    <GenericArgument Name="System.Object,System.Private.CoreLib" />
+                </Method>
+            </Type>
+            <Type Name="Microsoft.EntityFrameworkCore.Infrastructure.ExpressionExtensions" Dynamic="Required All">
+                <Method Name="ValueBufferTryReadValue" Dynamic="Required">
+                    <GenericArgument Name="System.Int32,System.Private.CoreLib" />
+                </Method>
+            </Type>
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory+Database,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory+Database+Connection,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory+Database+Command,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory+Database+Transaction,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory+Update,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory+Model,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory+Model+Validation,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory+Query,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory+Infrastructure,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.DbLoggerCategory+ChangeTracking,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+            <Type Name="Microsoft.EntityFrameworkCore.Diagnostics.ISaveChangesInterceptor,Microsoft.EntityFrameworkCore" Dynamic="Required All" />
+        </Assembly>
+
+        <Assembly Name="System.Private.CoreLib">
+            <Type Name="System.DateTimeOffset" Dynamic="Required All" />
+            <Type Name="System.DateTime" Dynamic="Required All">
+                <Method Name="AddYears" Dynamic="Required" />
+                <Method Name="AddMonths" Dynamic="Required" />
+                <Method Name="AddDays" Dynamic="Required" />
+                <Method Name="AddHours" Dynamic="Required" />
+                <Method Name="AddMinutes" Dynamic="Required" />
+                <Method Name="AddSeconds" Dynamic="Required" />
+                <Method Name="AddMilliseconds" Dynamic="Required" />
+                <Method Name="AddTicks" Dynamic="Required" />
+            </Type>
+            <Type Name="System.DateOnly" Dynamic="Required All">
+                <Method Name="AddYears" Dynamic="Required" />
+                <Method Name="AddMonths" Dynamic="Required" />
+                <Method Name="AddDays" Dynamic="Required" />
+            </Type>
+            <Type Name="System.Guid" Dynamic="Required All">
+                <Method Name="NewGuid" Dynamic="Required" />
+            </Type>
+            <Type Name="System.Random" Dynamic="Required All">
+                <Method Name="Next" Dynamic="Required" />
+            </Type>
+        </Assembly>
+
+    </Application>
+</Directives>
