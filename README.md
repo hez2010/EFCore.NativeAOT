@@ -23,3 +23,6 @@ dotnet publish -c Release -r win-x64
 The built dist will be placed in `publish` directory, for example,  `bin/Release/net6.0/win-x64/publish`.
 
 You may want to access the endpoint `/WeatherForecast` to see the insert and query result.
+
+## Note
+To split things out, I moved all NativeAOT related things to `Directory.Build.props` including references to NativeAOT compiler and `rd.xml`. You can simply move them back to the csproj file if you don't want a `Directory.Build.props` separately. 
