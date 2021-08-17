@@ -8,7 +8,7 @@ This project shows how to use Entity Framework Core (SQLite) with NativeAOT. You
 You need to clone this project to your local development environment first:
 
 ```bash
-git clone https://github.dev/hez2010/EFCore.NativeAOT.git
+git clone https://github.com/hez2010/EFCore.NativeAOT.git
 cd EFCore.NativeAOT
 ```
 
