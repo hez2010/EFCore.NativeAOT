@@ -4,7 +4,7 @@
             <Type Name="EFCore.NativeAOT.Controllers.WeatherForecastController" Dynamic="Required All" />
         </Assembly>
 
-        <Assembly Name="Microsoft.EntityFrameworkCore.Relational">
+        <Assembly Name="Microsoft.EntityFrameworkCore.Relational" Dynamic="Required All">
             <Type Name="Microsoft.EntityFrameworkCore.Update.Internal.KeyValueIndexFactorySource" Dynamic="Required All">
                 <Method Name="CreateFactory" Dynamic="Required">
                     <GenericArgument Name="System.Int32,System.Private.CoreLib" />
@@ -12,7 +12,9 @@
             </Type>
         </Assembly>
 
-        <Assembly Name="Microsoft.EntityFrameworkCore">
+        <Assembly Name="Microsoft.EntityFrameworkCore.Sqlite" Dynamic="Required All" />
+
+        <Assembly Name="Microsoft.EntityFrameworkCore" Dynamic="Required All">
             <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.EntryCurrentValueComparer`1[[System.Int32,System.Private.CoreLib]]" Dynamic="Required All" />
             <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer+DefaultValueComparer`1[[System.Int32,System.Private.CoreLib]]" Dynamic="Required All" />
             <Type Name="Microsoft.EntityFrameworkCore.Metadata.Internal.ClrAccessorFactory`1[[Microsoft.EntityFrameworkCore.Metadata.Internal.ClrPropertyGetter`2[[EFCore.NativeAOT.Table1,EFCore.NativeAOT],[System.Int32,System.Private.CoreLib]],Microsoft.EntityFrameworkCore]]" Dynamic="Required All">
