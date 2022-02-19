@@ -6,5 +6,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="7.0.0-*" />
     <RdXmlFile Include="rd.xml" />
+    <RdXmlFile Include="Microsoft.EntityFrameworkCore.rd.xml" />
+    <RdXmlFile Include="Microsoft.EntityFrameworkCore.Sqlite.rd.xml" />
   </ItemGroup>
 </Project>
